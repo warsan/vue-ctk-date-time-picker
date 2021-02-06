@@ -42,14 +42,14 @@ export default {
   customShortcuts: {
     type: Array,
     default: () => ([
-      { key: 'thisWeek', label: 'This week', value: 'isoWeek' },
-      { key: 'lastWeek', label: 'Last week', value: '-isoWeek' },
-      { key: 'last7Days', label: 'Last 7 days', value: 7 },
-      { key: 'last30Days', label: 'Last 30 days', value: 30 },
-      { key: 'thisMonth', label: 'This month', value: 'month' },
-      { key: 'lastMonth', label: 'Last month', value: '-month' },
-      { key: 'thisYear', label: 'This year', value: 'year' },
-      { key: 'lastYear', label: 'Last year', value: '-year' }
+      { key: 'thisWeek', label: 'На этой неделе', value: 'isoWeek' },
+      { key: 'lastWeek', label: 'Прошлая неделя', value: '-isoWeek' },
+      { key: 'last7Days', label: 'Последние 7 дней', value: 7 },
+      { key: 'last30Days', label: 'Последние 30 дней', value: 30 },
+      { key: 'thisMonth', label: 'Этот месяц', value: 'month' },
+      { key: 'lastMonth', label: 'Прошлый месяц', value: '-month' },
+      { key: 'thisYear', label: 'В этом году', value: 'year' },
+      { key: 'lastYear', label: 'Прошлый год', value: '-year' }
     ])
   },
   noValueToCustomElem: { type: Boolean, default: false },

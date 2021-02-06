@@ -19,7 +19,7 @@
           alt="logo-chronotruck-dark"
         >
         <h1>CtkDatetimePicker</h1>
-        <h3>A VueJs component for select date & time</h3>
+        <h3>Компонент VueJs для выбора даты и времени</h3>
         <div
           class="container lm-mt-4"
         >
@@ -35,7 +35,7 @@
             target="_blank"
             href="https://github.com/chronotruck/vue-ctk-date-time-picker/releases"
           >
-            Changelog
+            Журнал изменений
           </a>
           <a
             class="lm-btn lm-btn-danger"
@@ -49,7 +49,7 @@
           class="lm-btn lm-btn-success"
           @click="darkMode = !darkMode"
         >
-          {{ darkMode ? 'Disable' : 'Enable' }} Dark Mode
+          {{ darkMode ? 'Disable' : 'Enable' }} Тёмный режим
         </button>
       </header>
       <div
@@ -94,15 +94,14 @@
             <h4>{{ demo.description }}</h4>
             <hr>
             <div class="flex flex-wrap justify-content-between">
-              <p><b>Inititale value</b> : {{ demo.initial }}</p>
+              <p><b>Начальное значение</b> : {{ demo.initial }}</p>
               <p><b>v-model</b> = {{ demo.value || 'null' }}</p>
             </div>
             <hr>
             <button
               class="lm-btn option"
               @click="demo.editOption = !demo.editOption"
-            >
-              Edit options
+            >Параметры редактирования
             </button>
             <div
               v-show="demo.editOption"
@@ -110,7 +109,7 @@
             >
               <div class="flex-1">
                 <h4 style="margin-bottom: 10px;">
-                  String options
+                  Параметры строки
                 </h4>
                 <div
                   v-for="str in stringOptions"
@@ -127,7 +126,7 @@
                   </span>
                 </div>
                 <h4 style="margin-bottom: 10px;">
-                  Integer options
+                  Целочисленные параметры
                 </h4>
                 <div
                   v-for="int in intOptions"
@@ -146,7 +145,7 @@
               </div>
               <div class="flex-1">
                 <h4 style="margin-bottom: 10px;">
-                  Boolean options
+                  Логические параметры
                 </h4>
                 <div
                   v-for="opt in booleanOptions"
@@ -166,7 +165,7 @@
               </div>
               <div>
                 <h4 style="margin-bottom: 10px;">
-                  Options not editable (is Array)
+                  Параметры не редактируются (это массив)
                 </h4>
                 <span
                   v-for="opt in optionsNotEditable"
@@ -271,8 +270,8 @@
         demoComponents: [
           {
             id: '1',
-            title: 'Date Time Picker',
-            description: 'Date & Time selector',
+            title: 'Выбор даты и времени',
+            description: 'Селектор даты и времени',
             initial: '2018-04-07 20:26',
             value: '2018-04-07 20:26',
             editOption: false,
@@ -285,8 +284,8 @@
           },
           {
             id: '2',
-            title: 'Range Date Picker',
-            description: 'Date Range selector - With custom element to trigger the component (only input or button)',
+            title: 'Выбор даты диапазона',
+            description: 'Селектор диапазона дат - с настраиваемым элементом для запуска компонента (только ввод или кнопка)',
             editOption: false,
             initial: {
               start: '2018-04-05',
@@ -310,8 +309,8 @@
           },
           {
             id: '3',
-            title: 'Date Picker',
-            description: 'Date selector - right position - noLabel true - With large input (input-size="lg") - format: "MM-DD-YYYY" - formatted: "ll"',
+            title: 'Выбор даты',
+            description: 'Селектор даты - правое положение - noLabel true - с большим вводом (input-size="lg") - format: "MM-DD-YYYY" - formatted: "ll"',
             editOption: false,
             initial: '14-01-2019',
             value: '14-01-2019',
@@ -330,7 +329,7 @@
           },
           {
             id: '4',
-            title: 'Time Picker - With small input (input-size="sm") & minute-interval="10"',
+            title: 'Выбор времени - с небольшим вводом (input-size="sm") & minute-interval="10"',
             description: 'Time selector',
             editOption: false,
             initial: '11:26 am',
@@ -349,8 +348,8 @@
           },
           {
             id: '5',
-            title: 'Inline Picker',
-            description: 'Inline selector with keyboard accessibility disabled & disabled weekly dates (available for all pickers)',
+            title: 'Встроенный сборщик',
+            description: 'Встроенный селектор с отключенной доступностью клавиатуры и отключенными еженедельными датами (доступен для всех сборщиков)',
             editOption: false,
             initial: {
               start: '2018-04-05',
@@ -372,20 +371,20 @@
           },
           {
             id: '6',
-            title: 'Disabled Picker',
+            title: 'Отключенное средство выбора',
             description: '(disabled="true")',
             editOption: false,
             initial: 'null',
             value: null,
             options: {
               disabled: true,
-              label: 'Is Disabled',
+              label: 'Выключен',
               id: 'DisabledPicker'
             }
           },
           {
             id: '7',
-            title: 'Min and Max date with time in 24h-format',
+            title: 'Мин. И Макс. Дата со временем в 24-часовом формате',
             description: 'minDate: 2019-03-03 20:10, maxDate: 2019-06-24 09:14',
             initial: '2019-03-04 20:26',
             value: '2019-03-04 20:26',
@@ -399,7 +398,7 @@
           },
           {
             id: '8',
-            title: 'Min and Max date with time in 12h-format',
+            title: 'Мин. И Макс. Дата со временем в 12-часовом формате',
             description: 'minDate: 2019-03-03 8:10 pm, maxDate: 2019-06-24 9:14 am',
             initial: '2019-03-03 8:10 pm',
             value: '2019-03-06 8:20 pm',
@@ -413,7 +412,7 @@
           },
           {
             id: '9',
-            title: 'Enabled/Disabled dates Picker',
+            title: 'Вкл/откл средство выбора дат',
             description: '',
             editOption: false,
             initial: { 'disabledDates': ['2021-02-22'], 'enabledDates': ['2021-02-21', '2021-02-22', '2021-02-23'] },
@@ -441,7 +440,7 @@
         timePickerValue: '11:26',
         minuteInterval: 5,
         minuteInterval2: 10,
-        hint: 'Error message',
+        hint: 'Сообщение об ошибке',
         errorHint: true,
         timeFormat: 'hh:mm a',
         minDate: '2018-04-03',
@@ -464,14 +463,14 @@
           })
         ),
         customShortcuts: [
-          { key: 'thisWeek', label: 'This week', value: 'isoWeek' },
-          { key: 'lastWeek', label: 'Last week', value: '-isoWeek' },
-          { key: 'last7Days', label: 'Last 7 days', value: 7 },
-          { key: 'last30Days', label: 'Last 30 days', value: 30 },
-          { key: 'thisMonth', label: 'This month', value: 'month' },
-          { key: 'lastMonth', label: 'Last month', value: '-month' },
-          { key: 'thisYear', label: 'This year', value: 'year' },
-          { key: 'lastYear', label: 'Last year', value: '-year' }
+          { key: 'thisWeek', label: 'Эта неделя', value: 'isoWeek' },
+          { key: 'lastWeek', label: 'На прошлой неделе', value: '-isoWeek' },
+          { key: 'last7Days', label: 'Последние 7 дней', value: 7 },
+          { key: 'last30Days', label: 'Последние 30 дней', value: 30 },
+          { key: 'thisMonth', label: 'Этот месяц', value: 'month' },
+          { key: 'lastMonth', label: 'Прошлый месяц', value: '-month' },
+          { key: 'thisYear', label: 'В этом году', value: 'year' },
+          { key: 'lastYear', label: 'Прошлый год', value: '-year' }
         ]
       }
     }

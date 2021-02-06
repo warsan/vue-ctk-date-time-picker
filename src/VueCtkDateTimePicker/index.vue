@@ -106,8 +106,8 @@
   }
 
   /**
-   * Object containing the default behaviour values of the calendar.
-   * Those values can be overrided by the `behaviour` property.
+   * Объект, содержащий значения поведения календаря по умолчанию.
+   * Эти значения могут быть отменены свойством `behaviour`.
    * @const defaultBehaviour
    */
   const defaultBehaviour = {
@@ -243,7 +243,7 @@
     methods: {
       setValueToCustomElem () {
         /**
-         * TODO: Find a way (perhaps), to bind default attrs to custom element.
+         * TODO: Найдите способ (возможно) привязать атрибуты по умолчанию к настраиваемому элементу.
          */
         const target = this.$slots.default[0]
         if (target) {
@@ -348,13 +348,13 @@
           datePickerHeight = this.noButton ? datePickerHeight - 41 : datePickerHeight
           datePickerHeight = this.noHeader ? datePickerHeight - 58 : datePickerHeight
           if (parentRect.top < datePickerHeight) {
-            // No place on top --> bottom
+            // Нет места сверху --> снизу
             return 'bottom'
           } else if (windowHeight - (parentRect.height + datePickerHeight + parentRect.top) >= 0) {
-            // Have place on bottom --> bottom
+            // Есть место внизу --> внизу
             return 'bottom'
           } else {
-            // No place on bottom --> top
+            // Нет места внизу --> сверху
             return 'top'
           }
         }
