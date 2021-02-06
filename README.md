@@ -2,15 +2,15 @@
 
 # VueCtkDateTimePicker
 
-> A vue component for select dates (range mode available) & time
+> Компонент vue для выбора дат (доступен режим диапазона) и времени
 
 [![Build Status](https://circleci.com/gh/chronotruck/vue-ctk-date-time-picker/tree/master.svg?style=shield)](https://circleci.com/gh/chronotruck/vue-ctk-date-time-picker/tree/master)
 
-This documentation is for v2.\*. Find v1 documentation [here](./assets/doc-v1.md)
+Эта документация предназначена для v2.\*. Найдите документацию по версии 1 [здесь](./assets/doc-v1.md)
 
 ![vue-ctk-date-time-picker](./assets/illu-animated.gif)
 
-## Dark mode
+## Тёмный режим
 
 ![vue-ctk-date-time-picker](./assets/illu-animated-dark.gif)
 
@@ -18,7 +18,7 @@ This documentation is for v2.\*. Find v1 documentation [here](./assets/doc-v1.md
 
 [Enjoy](https://chronotruck.github.io/vue-ctk-date-time-picker/)
 
-# Installation
+# Установка
 
 Yarn
 
@@ -32,7 +32,7 @@ NPM
 npm i --save vue-ctk-date-time-picker
 ```
 
-# Usage
+# Применение
 
 ## ES6 Modules / CommonJS
 
@@ -79,21 +79,21 @@ Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker);
 </script>
 ```
 
-Here is an example of [UMD implementation](https://codepen.io/louismazel/pen/jQWNzQ).
+Вот пример [реализации UMD](https://codepen.io/louismazel/pen/jQWNzQ).
 
-## Use custom element to trigger the component
+## Использовать настраиваемый элемент для запуска компонента
 
 ```html
 <VueCtkDateTimePicker :no-value-to-custom-elem="(true|false)" />
   ...
   <input type="text" />
   ... or
-  <button type="button">Label</button>
+  <button type="button">Метка</button>
   ...
 </VueCtkDateTimePicker>
 ```
 
-# Props API
+# Реквизит API
 
 | Props                       | Type              | Required | Default                     |
 | --------------------------- | ----------------- | -------- | --------------------------- |
@@ -140,36 +140,36 @@ Here is an example of [UMD implementation](https://codepen.io/louismazel/pen/jQW
 | behaviour                   | Object            | no       | [See behaviour](#Behaviour) |
 | id (14)                     | String            | no       | undefined                   |
 
-(1) hint : Is a text that replaces the label/placeholder (Ex : Error designation)
+(1) hint : Текст, заменяющий метку/заполнитель (Пример: обозначение ошибки)
 
-(2) error : When is `true` --> Input border & label are red
+(2) error : Когда `true` --> Входная граница и метка красные
 
-(3) color: Replace color for the hint, the borders & picker color
+(3) color: Заменить цвет подсказки, границ и цвета средства выбора
 
-(4) button-color: Replace color for the buttons on bottom (validation & 'now')
+(4) button-color: Заменить цвет кнопок внизу (проверка и 'now')
 
-(5) locale : Default value is the locale of the browser - Ex : Set `locale="fr"` to force to French language
+(5) locale : Значение по умолчанию - это локаль браузера - Пример: Установите `locale="fr"` для принудительного использования французского языка.
 
-(6) no-value-to-custom-elem : No value will set to your elem (you can get the formatted value with @formatted-value event)
+(6) no-value-to-custom-elem : Для вашего элемента не будет установлено никакого значения (вы можете получить отформатированное значение с помощью события @formatted-value)
 
-(7) min-date && max-date should be in the same format as property format specified. If format not set - it is set to 'YYYY-MM-DD hh:mm a' by default
+(7) min-date && max-date должна быть в том же формате, что и указанный формат свойства. Если формат не задан - по умолчанию установлено значение 'YYYY-MM-DD hh:mm a'.
 
-(8) Disabled-Dates is an Array of dates in 'YYYY-MM-DD' format (ex: `['2018-04-03', '2018-04-07', '2018-04-09']`)
+(8) Disabled-Dates - это массив дат в формате 'YYYY-MM-DD' (пример: `['2018-04-03', '2018-04-07', '2018-04-09']`)
 
-(9) disabled-hours : Must be an Array of hours in 24h format ('00' to '23') : `['00','01','02','03','04','05','06','07','19','20','21','22','23']`
+(9) disabled-hours : Должен быть массивом часов в 24-часовом формате. ('00' to '23') : `['00','01','02','03','04','05','06','07','19','20','21','22','23']`
 
-(10) custom-shortcuts - It's an array of objects. Each object represents a single shortcut.
+(10) custom-shortcuts - Это массив объектов. Каждый объект представляет собой один ярлык.
 
 ```js
 [
-  { key: 'thisWeek', label: 'This week', value: 'isoWeek' },
-  { key: 'lastWeek', label: 'Last week', value: '-isoWeek' },
-  { key: 'last7Days', label: 'Last 7 days', value: 7 },
-  { key: 'last30Days', label: 'Last 30 days', value: 30 },
-  { key: 'thisMonth', label: 'This month', value: 'month' },
-  { key: 'lastMonth', label: 'Last month', value: '-month' },
-  { key: 'thisYear', label: 'This year', value: 'year' },
-  { key: 'lastYear', label: 'Last year', value: '-year' }
+  { key: 'thisWeek', label: 'На этой неделе', value: 'isoWeek' },
+  { key: 'lastWeek', label: 'Прошлая неделя', value: '-isoWeek' },
+  { key: 'last7Days', label: 'Последние 7 дней', value: 7 },
+  { key: 'last30Days', label: 'Последние 30 дней', value: 30 },
+  { key: 'thisMonth', label: 'Этот месяц', value: 'month' },
+  { key: 'lastMonth', label: 'Прошлый месяц', value: '-month' },
+  { key: 'thisYear', label: 'В этом году', value: 'year' },
+  { key: 'lastYear', label: 'Прошлый год', value: '-year' }
 ];
 ```
 
@@ -193,33 +193,33 @@ If the **value of shortcut is a function**, we'll use it to generate the `start`
       }
     },
     callback: ({ start, end }) => {
-      console.log('My shortcut was clicked with values: ', start, end)
+      console.log('На моем ярлыке щёлкнули значения: ', start, end)
     }
   },
 ];
 ```
 
-With the `shortcut` property, you can specify a shortcut that's selected by default by passing it's `key` value.
+С помощью свойства `shortcut` вы можете указать ярлык, который выбирается по умолчанию, передав его значение `key`.
 
 ```js
   :shortcut="'thisMonth'"
 ```
 
-(11) disabled-weekly : Days of the week which are disabled every week, in Array format with day index, Sunday as 0 and Saturday as 6: `[0,4,6]`
+(11) disabled-weekly : Дни недели, которые отключаются каждую неделю, в формате массива с индексом дня, воскресенье - 0, суббота - 6: `[0,4,6]`
 
-(12) no-keyboard : Disable keyboard accessibility & navigation
+(12) no-keyboard : Отключить доступность клавиатуры и навигацию
 
-(13) right : add this attribute to align the picker on right
+(13) right : добавьте этот атрибут, чтобы выровнять средство выбора справа
 
-(14) id : it assign id such as 'passedstring-input' to input help diffrentiate between two date-time-picker on same component.
+(14) id : назначает идентификатор, такой как 'passedstring-input', чтобы справка по вводу различалась между двумя средствами выбора даты и времени в одном компоненте.
 
-> Any additionnal attribute passed to the component will be automatically be binded to the input component. (eg. if you passes a `type` attribute, the `<input>` will receive it).
+> Любой дополнительный атрибут, переданный компоненту, будет автоматически привязан к компоненту ввода. (например. если вы передаете атрибут type, `<input>` получит его).
 
-## Behaviour
+## Поведение
 
-In order to avoid having too much properties in the component, We're adding a `behaviour` property that is an object including some annex behaviour values.
+Чтобы избежать слишком большого количества свойств в компоненте, мы добавляем свойство «behavior», которое является объектом, включающим некоторые значения поведения приложения.
 
-The default value for this object is:
+Значение по умолчанию для этого объекта:
 
 ```js
 {
@@ -229,7 +229,7 @@ The default value for this object is:
 }
 ```
 
-To override those values, pass a new object with the values you want to override:
+Чтобы переопределить эти значения, передайте новый объект со значениями, которые вы хотите переопределить:
 
 ```html
 <ctk-date-time-picker
@@ -241,106 +241,106 @@ To override those values, pass a new object with the values you want to override
 />
 ```
 
-| Behaviour              | Description                                                                                                                                                                                                                                                                                                                                                                       | Type    | Default |
+| Поведение              | Описание                                                                                                                                                                                                                                                                                                                                                                       | Type    | Default |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------- |
-| time.nearestIfDisabled | If `true`, it will select the nearest available hour in the timepicker, if the current selected hour is disabled. Per example, if the hour is 12 but all the hours have been disabled until 14, then the 14 will be selected by default. Set `false` to disable this behaviour; the current hour will remain selected even if it has been disabled. The user cannot re-select it. | Boolean | true    |
+| time.nearestIfDisabled | Если `true`, он выберет ближайший доступный час в таймпикере, если текущий выбранный час отключен. Например, если час равен 12, но все часы были отключены до 14, то 14 будет выбрано по умолчанию. Установите `false`, чтобы отключить это поведение; текущий час останется выбранным, даже если он был отключен. Пользователь не может повторно выбрать его. | Boolean | true    |
 
-# Events API
+# API событий
 
-| Event           | Return                                            |
-| --------------- | ------------------------------------------------- |
-| input           | value (formatted with 'format' props)             |
-| formatted-value | value (formatted with 'formatted' props)          |
-| is-shown        | Component is shown                                |
+| Событие           | Возврат                                                           |
+| --------------- | -------------------------------------------------                   |
+| input           | значение (отформатировано с помощью реквизита 'format')             |
+| formatted-value | значение (отформатировано с помощью 'отформатированных' реквизитов) |
+| is-shown        | Компонент показан                                                   |
 | is-hidden       | Component is hidden                               |
 | validate        | Click on validate button (so component is closed) |
 | destroy         | Component is destroy                              |
 
-# Keyboard Accessible
+# Доступ с клавиатуры
 
-| Key            | Action                     |
-| -------------- | -------------------------- |
-| Arrow Right    | Next Day                   |
-| Arrow Left     | Previous Day               |
-| Arrow Down     | Same day on next week      |
-| Arrow Up       | Same day on previous week  |
-| Page Down      | Same day on previous month |
-| Page Up        | Same day on next month     |
-| Enter or Space | Select day                 |
-| Escape         | Close component            |
+| Ключ              | Действие                           |
+| --------------    | --------------------------         |
+| Стрелка вправо    | Следующий день                     |
+| Стрелка влево     | Прошлый день                       |
+| Стрелка вниз      | В тот же день на следующей неделе  |
+| Стрелка вверх     | В тот же день на предыдущей неделе |
+| Page Down         | В тот же день предыдущего месяца   |
+| Page Up           | В тот же день следующего месяца    |
+| Enter или пробел  | Выберите день                      |
+| Escape            | Закрыть компонент                  |
 
-# Upcoming features (Todo)
+# Предстоящие функции (Todo)
 
-- Double Calendar on RangeDatePicker (issue : #33)
-- Inputs Text to choose values (issue #30)
-- TimePicker seconds support (issue : #79)
+- Двойной календарь на RangeDatePicker (issue : #33)
+- Ввод текста для выбора значений (issue #30)
+- Поддержка секунд TimePicker (issue : #79)
 
-# Contribute
+# Делать вклад
 
-## Setting up development server
+## Настройка сервера разработки
 
-### Without Docker
+### Без докера
 
-Ensure you have Node and npm in your machine. Minimal config is:
+Убедитесь, что на вашем компьютере есть Node и npm. Минимальная конфигурация:
 
 - node >= 6.0
 - npm >= 3.0
 
-> This project is built with `node@10.x`.
+> Этот проект построен с `node@10.x`.
 
-Install the development dependencies by running:
+Установите зависимости разработки, запустив:
 
 ```bash
 npm install
 ```
 
-or
+или
 
 ```bash
 npm ci # Recommanded if you have node > 10.x
 ```
 
-Once your dependencies are installed, start the development server with:
+После установки ваших зависимостей запустите сервер разработки с помощью:
 
 ```bash
 npm run serve
 ```
 
-This will start the development server available at `http://localhost:8080`.
+Это запустит сервер разработки, доступный по адресу `http://localhost:8080`.
 
 ### Docker
 
-To easily set-up your development environment, you can spin up a container containing the development app.
-For that, you need Docker with docker-compose in your machine.
+Чтобы легко настроить среду разработки, вы можете развернуть контейнер, содержащий приложение для разработки.
+Для этого вам понадобится Docker с docker-compose на вашем компьютере.
 
-Once you've everything running, you can simply run the following command to start the dev server:
+Когда все будет запущено, вы можете просто запустить следующую команду, чтобы запустить сервер разработки:
 
 ```bash
 docker-compose up -d
 ```
 
-This will start the development server inside a container and accessible through `http://localhost:8080`.
+Это запустит сервер разработки внутри контейнера и будет доступен через `http://localhost:8080`.
 
-## Compiles and hot-reloads for development
+## Компилирует и выполняет горячую перезагрузку для разработки
 
 ```bash
 npm run serve
 ```
 
-## Linter
+## Линтер
 
 ```bash
 npm run lint
 ```
 
-## Tests
+## Тесты
 
-Work in progress
+Работа в процессе
 
-# License
+# Лицензия
 
-This project is licensed under [MIT License](http://en.wikipedia.org/wiki/MIT_License)
+Этот проект лицензирован в соответствии с [MIT License](http://en.wikipedia.org/wiki/MIT_License)
 
-# Credit
+# Кредит
 
-Open source time proudly sponsored by [Chronotruck](https://www.chronotruck.com)
+Время с открытым исходным кодом с гордостью спонсируется [Chronotruck](https://www.chronotruck.com)
