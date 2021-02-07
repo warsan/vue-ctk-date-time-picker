@@ -69,7 +69,7 @@
                 v-model="value2"
                 color="purple"
                 :dark="darkMode"
-                locale="fr"
+                locale="ru"
                 no-label
                 :format="'YYYY-MM-DD HH:mm'"
                 :min-date="'2018-04-05 12:15'"
@@ -284,7 +284,7 @@
           },
           {
             id: '2',
-            title: 'Выбор даты диапазона',
+            title: 'Выбор диапазона дат',
             description: 'Селектор диапазона дат - с настраиваемым элементом для запуска компонента (только ввод или кнопка)',
             editOption: false,
             initial: {
@@ -303,7 +303,7 @@
               formatted: 'll',
               format: 'YYYY-MM-DD',
               color: 'purple',
-              label: 'Select date range',
+              label: 'Select date range', // Выбор диапазона даты
               id: 'RangeDatePicker'
             }
           },
@@ -319,7 +319,7 @@
               color: 'coral',
               inputSize: 'lg',
               buttonColor: 'green',
-              buttonNowTranslation: 'Maintenant',
+              buttonNowTranslation: 'Теперь',
               id: 'DatePicker',
               format: 'DD-MM-YYYY',
               formatted: 'll',

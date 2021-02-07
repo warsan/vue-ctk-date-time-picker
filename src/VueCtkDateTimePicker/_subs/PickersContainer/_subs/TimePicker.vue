@@ -176,7 +176,7 @@
             : moment(this.maxTime, 'HH:mm').format('HH')
         }
 
-        // In case if hour present as 08, 09, etc
+        // В случае, если час присутствует как 08, 09 и т. д.
         minEnabledHour = parseInt(minEnabledHour, 10)
         maxEnabledHour = parseInt(maxEnabledHour, 10)
 
@@ -328,9 +328,10 @@
           : tmpHour
 
         /**
-         * Here we have two different behaviours. If the behaviour `nearestIfDisabled` is enabled
-         * and the selected hour is disabled, we set the hour to the nearest hour available.
-         * Otherwise just set the hour to the current value.
+         * Здесь мы имеем два различных поведения.
+         * Если поведение "nearestIfDisabled" включено, а выбранный час отключен, 
+         * мы устанавливаем его на ближайший доступный час.
+         * В противном случае просто установите час на текущее значение.
          */
         this.hour = this.behaviour && this.behaviour.time && this.behaviour.time.nearestIfDisabled && this.isHoursDisabled(hourToSet)
           ? this.getAvailableHour()

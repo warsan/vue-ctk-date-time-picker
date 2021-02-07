@@ -293,7 +293,7 @@
           const hasTime = this.format.includes('T')
           return hasTime ? this.format.split('T')[1] : this.format.split(' ').slice(1).join(' ')
         } else {
-          window.console.warn('A time format must be indicated')
+          window.console.warn('Необходимо указать формат времени')
         }
       },
       getMonth (payload) {

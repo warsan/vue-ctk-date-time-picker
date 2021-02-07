@@ -1,7 +1,7 @@
 import moment from 'moment'
 /*
-  * Vue mixin to inject the required methods, events to handle the date navigation
-  * with the keyboard.
+  * Vue mixin для введения необходимых методов, 
+  * событий для обработки навигации по дате с помощью клавиатуры.
   * @module mixin - keyboardAccessibility
 */
 export default {
@@ -58,7 +58,7 @@ export default {
           }
           if ('activeElement' in document) document.activeElement.blur()
         } catch (err) {
-          window.console.error('An error occured while switch date', e)
+          window.console.error('Произошла ошибка при переключении даты', e)
         }
       }
     },

@@ -34,7 +34,7 @@
       @click.stop="closePicker"
     />
 
-    <!-- Date picker container -->
+    <!-- Контейнер для выбора даты -->
     <PickersContainer
       v-if="!isDisabled"
       :id="`${$attrs.id}-picker-container`"
@@ -186,7 +186,7 @@
         return this.outputFormat || this.format
       },
       /**
-       * Returns true if the field is disabled
+       * Возвращает true, если поле отключено
        * @function isDisabled
        * @returns {boolean}
        */
@@ -194,7 +194,7 @@
         return typeof this.$attrs.disabled !== 'undefined' && this.$attrs.disabled !== false
       },
       /**
-       * Returns the behaviour object with the overrided values
+       * Возвращает объект поведения с переопределенными значениями
        * @function _behaviour
        * @returns {Object}
        */
@@ -231,7 +231,7 @@
         }
       }
       if (this.format === 'YYYY-MM-DD hh:mm a' && this.onlyTime) {
-        console.warn(`A (time) format must be indicated/ (Ex : format="HH:mm")`)
+        console.warn(`Должен быть указан формат (время) / (Ex : format="HH:mm")`)
       }
     },
     beforeDestroy () {
@@ -253,7 +253,7 @@
             target.elm.innerHTML = this.dateFormatted ? this.dateFormatted : this.label
           }
         } else {
-          window.console.warn(`Impossible to find custom element`)
+          window.console.warn(`Невозможно найти пользовательский элемент`)
         }
       },
       addEventToTriggerElement () {
@@ -263,7 +263,7 @@
             this.toggleDatePicker()
           })
         } else {
-          window.console.warn(`Impossible to find custom element`)
+          window.console.warn(`Невозможно найти пользовательский элемент`)
         }
       },
       getRangeDatesFormatted () {
@@ -307,7 +307,7 @@
         return date ? nearestMinutes(this.minuteInterval, date, this.formatOutput).format('YYYY-MM-DD HH:mm') : null
       },
       /**
-       * Closes the datepicker
+       * Закрывает элемент управления datepicker
        * @function closePicker
        */
       closePicker () {

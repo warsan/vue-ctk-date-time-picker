@@ -57,7 +57,7 @@
     name: 'ButtonValidate',
     props: {
       /**
-       * TODO: Remove wrong default values
+       * TODO: Удалить неправильные значения по умолчанию
        */
       dark: { type: Boolean, default: null },
       buttonColor: { type: String, default: null },

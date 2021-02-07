@@ -91,7 +91,7 @@
         return !this.noClearButton && !this.isDisabled && this.value
       },
       /**
-       * Returns true if the field is disabled
+       * Возвращает true, если поле отключено
        * @function isDisabled
        * @returns {boolean}
        */

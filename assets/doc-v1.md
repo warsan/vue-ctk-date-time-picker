@@ -37,21 +37,21 @@
 | shortcuts-translation (8) | Object | no | - |
 | disabled-hours (9) | Array (of String) | no | - |
 
-(1) hint : Is a text that replaces the label/placeholder
+(1) hint : Текст, заменяющий метку/заполнитель
 
-(2) error-hint : When is `true` --> Input border & label are red
+(2) error-hint : Когда `true` --> Входная граница и метка красные
 
-(3) color: Replace color for the hint, the borders & time selected in dropdown
+(3) color: Заменить цвет подсказки, границ и времени, выбранных в раскрывающемся списке
 
-(4) locale : Default value is the locale of the browser - Ex : Set `locale="fr"` to force to French language
+(4) locale : Значение по умолчанию - локаль браузера. - Ex : Set `locale="fr"` to force to French language
 
-(5) time-zone : Default value is the time-zone of the browser - Ex : Set `Europe/Paris` to force to French TZ. Do not forget to use a format like this `YYYY-MM-DDTHH:mm:ssZ` to get the TZ
+(5) time-zone : Значение по умолчанию - часовой пояс браузера. - Ex : Set `Europe/Paris` to force to French TZ. Не забывайте использовать такой формат `YYYY-MM-DDTHH:mm:ssZ` чтобы получить TZ
  
 (6) min-date & max-date : Must be `'YYYY-MM-DD'` format
 
 (7) Disabled-Dates is an Array of dates in 'YYYY-MM-DD' format (ex: `['2018-04-03', '2018-04-07', '2018-04-09']`)
 
-(8) shortcuts-translation : Must be an Object like that
+(8) shortcuts-translation : Должен быть такой объект
 
 ```
 {
@@ -65,4 +65,4 @@
 }
 ```
 
-(9) disabled-hours : Must be an Array of hours in 24h format ('00' to '23') : `['00','01','02','03','04','05','06','07','19','20','21','22','23']`
+(9) disabled-hours : Должен быть массивом часов в 24-часовом формате. ('00' to '23') : `['00','01','02','03','04','05','06','07','19','20','21','22','23']`
