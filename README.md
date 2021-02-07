@@ -6,7 +6,7 @@
 
 [![Build Status](https://circleci.com/gh/chronotruck/vue-ctk-date-time-picker/tree/master.svg?style=shield)](https://circleci.com/gh/chronotruck/vue-ctk-date-time-picker/tree/master)
 
-Эта документация предназначена для v2.\*. Найдите документацию по версии 1 [здесь](./assets/doc-v1.md)
+Эта документация предназначена для v2.\*. Найти документацию по версии 1 [здесь](./assets/doc-v1.md)
 
 ![vue-ctk-date-time-picker](./assets/illu-animated.gif)
 
