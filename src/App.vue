@@ -26,14 +26,14 @@
           <a
             class="lm-btn lm-btn-dark lm-mr-2"
             target="_blank"
-            href="https://github.com/chronotruck/vue-ctk-date-time-picker"
+            href="https://github.com/warsan/vue-ctk-date-time-picker"
           >
             Github
           </a>
           <a
             class="lm-btn lm-btn-dark lm-mr-2"
             target="_blank"
-            href="https://github.com/chronotruck/vue-ctk-date-time-picker/releases"
+            href="https://github.com/warsan/vue-ctk-date-time-picker/releases"
           >
             Журнал изменений
           </a>
