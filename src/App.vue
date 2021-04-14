@@ -330,7 +330,7 @@
           {
             id: '4',
             title: 'Выбор времени - с небольшим вводом (input-size="sm") & minute-interval="10"',
-            description: 'Time selector',
+            description: 'Селектор времени',
             editOption: false,
             initial: '11:26 am',
             value: '11:26 am',
@@ -398,7 +398,7 @@
           },
           {
             id: '8',
-            title: 'Мин. И Макс. Дата со временем в 12-часовом формате',
+            title: 'Мин./Макс. дата со временем в 12-часовом формате',
             description: 'minDate: 2019-03-03 8:10 pm, maxDate: 2019-06-24 9:14 am',
             initial: '2019-03-03 8:10 pm',
             value: '2019-03-06 8:20 pm',
@@ -447,10 +447,10 @@
         maxDate: '2018-04-12',
         darkMode: false,
         shortcutsTranslation: {
-          'this_week': 'Cette semaine',
-          'last_30_days': '30 derniers jours',
-          'last_month': 'Mois précédent',
-          'last_year': 'L\'année dernière'
+          'this_week': 'На этой неделе',
+          'last_30_days': 'Текущий месяц',
+          'last_month': 'Прошлый месяц',
+          'last_year': 'L\'Прошлый год'
         },
         disabledDates: ['2018-04-03', '2018-04-07', '2018-04-09', '2018-04-11', '2018-04-13', '2018-04-15', '2018-04-17', '2018-04-19'],
         disabledHours: Array.from(new Array(8), (x, i) => `0${i}`).concat(
