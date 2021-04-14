@@ -49,7 +49,7 @@
           class="lm-btn lm-btn-success"
           @click="darkMode = !darkMode"
         >
-          {{ darkMode ? 'Disable' : 'Enable' }} Тёмный режим
+          {{ darkMode ? 'Выключить' : 'Включить' }} Тёмный режим
         </button>
       </header>
       <div
@@ -319,7 +319,7 @@
               color: 'coral',
               inputSize: 'lg',
               buttonColor: 'green',
-              buttonNowTranslation: 'Теперь',
+              buttonNowTranslation: 'Сейчас',
               id: 'DatePicker',
               format: 'DD-MM-YYYY',
               formatted: 'll',
@@ -384,7 +384,7 @@
           },
           {
             id: '7',
-            title: 'Мин. И Макс. Дата со временем в 24-часовом формате',
+            title: 'Мин./Макс. дата со временем в 24-часовом формате',
             description: 'minDate: 2019-03-03 20:10, maxDate: 2019-06-24 09:14',
             initial: '2019-03-04 20:26',
             value: '2019-03-04 20:26',
